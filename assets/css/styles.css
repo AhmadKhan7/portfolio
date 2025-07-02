@@ -699,6 +699,22 @@ img {
   margin-bottom: 07px; /* Adjust spacing between paragraphs */
 }
 
+/* Global fix */
+body {
+  overflow-x: hidden;
+}
+
+/* Optional: Prevent all containers from overflowing */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent full-width elements from breaking layout */
+img,
+section,
+div {
+  max-width: 100%;
+}
 
 
 
