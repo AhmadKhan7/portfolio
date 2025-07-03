@@ -21,8 +21,10 @@
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
-                <div>
+                <div class="header__contact">
                     <a href="#" class="nav__logo">Ahmad Khan</a>
+                    </div>
+
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -42,7 +44,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Ahmad</span>,<br> Web Developer <br>& Designer</h1>
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Ahmad,</span><br> Web Developer <br>& Designer</h1>
                     <a href="#contact" class="button">Contact Me !</a>
                 <div class="mobile-links">
                     <a href="#home"><i class='bx bx-home'></i></a>
@@ -68,8 +70,8 @@
  class="home__social-icon desktop-only" target="_blank">
                         <i class='bx bx-envelope'></i>
                     </a>
-                    <a href="https://wa.me/+923156761081" class="home__social-icon"><i class='bx bxl-whatsapp' ></i></a>
-                    <a href="https://github.com/AhmadKhan7" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://wa.me/+923156761081" target="_blank" class="home__social-icon"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="https://github.com/AhmadKhan7" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
               
                 <div class="home__img">
@@ -301,6 +303,23 @@
             </div>
             <p class="footer__copy">&#169;All rigths reserved</p>
         </footer>
+        <!-- Floating WhatsApp & Email Icon -->
+            <a href="https://wa.me/923156761081?text=Hi%20Ahmad!%20I'm%20interested%20in%20building%20a%20website%20with%20you." 
+            class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+            <i class='bx bxl-whatsapp'></i>
+            </a>
+           <!-- Mobile version -->
+        <a href="mailto:akahmad.khan123@gmail.com?subject=Interested%20in%20working%20with%20you&body=Hi%20Ahmad,%0A%0AI%20just%20visited%20your%20portfolio%20and%20was%20impressed%20with%20your%20work.%20I'd%20love%20to%20discuss%20a%20potential%20project%20or%20collaboration.%0A%0ALooking%20forward%20to%20connecting!%0A%0ARegards,%0A[Your Name]"
+ class="mobile-only floating-email">
+            <i class='bx bx-envelope'></i>
+        </a>
+
+    <!-- Desktop version -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=akahmad.khan123@gmail.com&su=Interested%20in%20working%20with%20you&body=Hi%20Ahmad,%0A%0AI%20just%20visited%20your%20portfolio%20and%20was%20impressed%20with%20your%20work.%20I'd%20love%20to%20discuss%20a%20potential%20project%20or%20collaboration.%0A%0ALooking%20forward%20to%20connecting!%0A%0ARegards,%0A[Your Name]"
+ class="desktop-only floating-email" target="_blank">
+            <i class='bx bx-envelope'></i>
+        </a>   
+
 
 
         <!--===== SCROLL REVEAL =====-->
@@ -308,5 +327,6 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        
     </body>
 </html>
