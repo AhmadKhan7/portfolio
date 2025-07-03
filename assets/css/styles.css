@@ -806,7 +806,9 @@ div {
   display: none; /* hide by default */
   pointer-events: none; /* makes image ignore clicks */
 }
-
+.mobile-project-text{
+  display: none;
+}
 /* Show on mobile only */
 @media screen and (max-width: 767px) {
   .arrow-img {
@@ -819,7 +821,19 @@ div {
     animation: bounce 1.8s infinite;
     
   }
+  .mobile-project-text{
+    display: block;
+  }
 }
+
+.mobile-only { display: inline; }
+.desktop-only { display: none; }
+
+@media (min-width: 767px) {
+  .mobile-only { display: none; }
+  .desktop-only { display: inline; }
+}
+
 
 
 
