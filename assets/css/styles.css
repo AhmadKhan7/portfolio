@@ -792,26 +792,24 @@ div {
 
 
 /* Base styling for the arrow wrapper */
-.arrow-skills {
-  position: absolute;
-  top: 262px;
-  right: -40px;
-  transform: translateX(-50%);
-  z-index: 10;
-  display: none; /* hide by default */
-}
-
 /* Styling for the arrow image itself */
 .arrow-img {
   width: 70px;      /* smaller size */
   height: auto;
   animation: bounce 1.8s infinite;
   opacity: 0.9;
+  position: absolute;
+  top: 262px;
+  right: 10px;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none; /* hide by default */
+  pointer-events: none; /* makes image ignore clicks */
 }
 
 /* Show on mobile only */
 @media screen and (max-width: 767px) {
-  .arrow-skills {
+  .arrow-img {
     display: block;
   }
   .mobile-project-text{
