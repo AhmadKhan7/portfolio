@@ -48,7 +48,9 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 600,
     delay: 100,
-//     reset: true
+    mobile: true,
+    reset: true,
+    viewFactor: 0.1
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
