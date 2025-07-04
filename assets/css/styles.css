@@ -863,13 +863,14 @@ div {
 
 .floating-whatsapp {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
   background-color: #fff; /* White background */
-  color: #000;             /* Black icon */
-  font-size: 26px;
-  width: 50px;
-  height: 50px;
+  color: #25D366;             /* icon */
+  font-size: 2rem;
+  width: auto;
+  height: auto;
+  padding: 12px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -887,14 +888,14 @@ div {
 
 .floating-email {
   position: fixed;
-  bottom: 80px;
+  bottom: 100px;
   right: 20px;
   width: auto; /* allow inline behavior */
   height: auto;
   padding: 12px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: #fff;
-  color: var(--second-color);
+  color: 	#EA4335;             /* icon */
   border-radius: 50%;
   z-index: 9999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -924,6 +925,76 @@ div {
   animation: slideInRight 0.6s ease-out 0.3s both;
 }
 
+
+/* --------------Header Link ---------------*/
+
+.header-cta-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--first-color);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInSlide 0.6s ease-out 1s forwards;
+  justify-self: end; /* Push to right within the grid */
+}
+
+/* Prevent black color on click */
+.header-cta-icon:visited,
+.header-cta-icon:active,
+.header-cta-icon:focus {
+  color: var(--first-color);
+}
+
+.header-cta-icon i {
+  font-size: 1.2rem;
+}
+
+.header-cta-icon:hover {
+  color: var(--first-color-alt);
+}
+
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Default: hidden */
+.mobile-only {
+  display: none !important;
+}
+
+/* Show only on screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  .mobile-only {
+    display: inline-flex !important;
+  }
+}
+
+.nav.bd-grid {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Left | Right */
+  align-items: center;
+}
+
+.header__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-cta-icon,
+.header-cta-icon:visited,
+.header-cta-icon:active,
+.header-cta-icon:focus {
+  color: var(--first-color) !important;
+  text-decoration: none;
+}
 
 
 
