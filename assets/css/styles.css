@@ -907,6 +907,12 @@ div {
   transform: scale(1.1);
 }
 
+.floating-whatsapp,
+.floating-email {
+  border: 1.5px solid #ccc;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 @keyframes slideInRight {
   from {
     transform: translateX(100%);
@@ -994,6 +1000,66 @@ div {
 .header-cta-icon:focus {
   color: var(--first-color) !important;
   text-decoration: none;
+}
+
+/*---------------------portfolio-projects------------------*/
+
+.work__card {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.work__img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.work__img-wrapper {
+  transition: transform 0.4s ease;
+}
+
+.work__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hover triggers zoom-in on wrapper */
+.work__img-container:hover .work__img-wrapper {
+  transform: scale(1.1);
+}
+
+/* Overlay fades in */
+.work__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.work__img-container:hover .work__overlay {
+  opacity: 1;
+}
+
+/* Show overlay always on mobile */
+@media screen and (max-width: 768px) {
+  .work__overlay {
+    opacity: 1;
+  }
+}
+
+.work__overlay h5 {
+  margin: 0;
+  font-size: 1rem;
 }
 
 
