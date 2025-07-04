@@ -784,7 +784,8 @@ div {
   bottom: -100px;
 }
 .arrow-skills{
-  bottom: 70px;
+  bottom: 20px;
+  right: 100px;
 }
 .arrow-work{
   bottom: -40px;
