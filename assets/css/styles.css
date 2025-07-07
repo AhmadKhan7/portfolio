@@ -800,8 +800,8 @@ div {
   animation: bounce 1.8s infinite;
   opacity: 0.9;
   position: absolute;
-  top: 262px;
-  right: 10px;
+  top: 310px;
+  right: 15px;
   transform: translateX(-50%);
   z-index: 1;
   display: none; /* hide by default */
@@ -815,16 +815,7 @@ div {
   .arrow-img {
     display: block;
   }
-  .mobile-project-text{
-    position: absolute;
-    right: -40px;
-    bottom: 10px;
-    animation: bounce 1.8s infinite;
-    
-  }
-  .mobile-project-text{
-    display: block;
-  }
+
   .back-to-top-container{
     padding-left: 40px;
   }
@@ -1063,6 +1054,76 @@ div {
 .work__overlay h5 {
   margin: 0;
   font-size: 1rem;
+}
+  .pricing__card {
+    flex: 0 0 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .pricing__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  }
+  .pricing__title {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: 0.25rem;
+  }
+  .pricing__price {
+    font-size: 1.25rem;
+    color: var(--second-color);
+    margin-bottom: 1rem;
+  }
+  .pricing__features {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.6;
+    color: #333;
+    flex-grow: 1;
+  }
+  .pricing__footer {
+    margin-top: auto;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .featured {
+    background: hsl(var(--hue-color), 89%, 60%, 0.08);
+    border: 2px solid var(--first-color);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.15);
+  }
+  @media (max-width: 1200px) {
+    .bd-grid.pricing__container {
+      flex-wrap: wrap;
+    }
+  }
+
+/* Default mobile/tablet layout */
+.pricing__container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+}
+
+/* Force 4 cards in 1 row on desktop */
+@media (min-width: 1024px) {
+  .pricing__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .pricing__card {
+    flex: 0 0 300px;
+    max-width: 3000px;
+  }
 }
 
 
