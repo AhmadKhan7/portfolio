@@ -821,7 +821,7 @@ div {
   }
 }
 
-.mobile-only {
+.mobile-onlyx {
   display: inline;
 }
 
@@ -830,7 +830,7 @@ div {
 }
 
 @media screen and (min-width: 768px) {
-  .mobile-only {
+  .mobile-onlyx {
     display: none !important;
   }
 
@@ -1125,6 +1125,16 @@ div {
     max-width: 3000px;
   }
 }
+  .cta-link-responsive {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .cta-link-responsive {
+      text-align: left;
+    }
+  }
 
 
 
