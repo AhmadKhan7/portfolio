@@ -683,6 +683,15 @@ img {
       transform: translateX(0);     /* back to start */
     }
   }
+  
+  /* Hide desktop nav */
+  .nav__menu,
+  .nav__toggle {
+    display: none !important;
+  }
+  .scroll-down{
+    display: none !important;
+  }
 }
 
 
@@ -715,14 +724,6 @@ img {
 
   
 
-  /* Hide desktop nav */
-  .nav__menu,
-  .nav__toggle {
-    display: none !important;
-  }
-  .scroll-down{
-    display: none !important;
-  }
 
 
 /* Animation */
