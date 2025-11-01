@@ -1543,9 +1543,7 @@ div {
 .mobile-links a:nth-child(5) .tiny-arrow { animation-delay: 0.8s; }
 .mobile-links a:nth-child(6) .tiny-arrow { animation-delay: 1s; }
 .mobile-links a:nth-child(7) .tiny-arrow { animation-delay: 1.2s; }
-* {
-  outline: 1px solid red;
-}
+
 
 
 
