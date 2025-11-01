@@ -702,7 +702,6 @@ img {
   .mobile-links a {
     display: flex;
     align-items: center;
-    gap: 4px;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
